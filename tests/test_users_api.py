@@ -26,4 +26,4 @@ class TestUsersAPI:
 
         logger.info(response.text)
         print(response.text)
-        # assert response.status_code == 200
+        assert response.status_code == 200
