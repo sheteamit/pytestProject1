@@ -21,7 +21,7 @@ class TestUsersAPI:
         assert response.status_code == 200
 
     def test_update_user(self, base_url):
-        # data = {"name": "Test User", "job": "Software Engineer"}
+        data = {"name": "Test User", "job": "Software Engineer"}
         response = self.client.put(f"{base_url}/api/users/2", headers=headers)
 
         logger.info(response.text)
